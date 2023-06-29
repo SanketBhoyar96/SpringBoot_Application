@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+
+body{
+	background: #515751;
+}
+
+h1{
+	color: red;
+	background: yellow;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+}
+label{
+	color: black;
+	font-family: inherit;
+	font-weight: bold;
+}
+label>span{
+	color: red;
+}
+
+#containerParent{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+}
+#userformId{
+background-color:#c0bebb;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 15px;	
+}
+
+#savebutton{
+ width:50%;
+ margin:auto;	
+}
+#savebutton>input{
+	width: 100%;
+	height: 30px;
+	 color: black;
+ background: #ff4e4e;
+ border: 1px solid white;
+ border-radius: 5px;
+	}
+	#savebutton>input:hover{
+	 background: purple;
+	 cursor: pointer;
+	 color: white;
+	 font-weight: bold;
+	}
+
+#pid{
+		width: 300px;
+	height: 30px;
+	color: blue;
+	border-radius: 2px;
+	border: 1px solid white;
+}
+#pname{
+		width: 300px;
+	height: 30px;
+	color: blue;
+	border-radius: 2px;
+	border: 1px solid white;
+}
+#price{
+		width: 300px;
+	height: 30px;
+	color: blue;
+	border-radius: 2px;
+	border: 1px solid white;
+}
+#pqty{
+		width: 300px;
+	height: 30px;
+	color: blue;
+	border-radius: 2px;
+	border: 1px solid white;
+}

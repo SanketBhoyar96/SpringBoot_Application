@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.soft.exception.UserNotSignInException;
-import com.soft.exception.UserNotSignUPFoundException;
+import com.soft.exception.SignInNotFoundException;
+import com.soft.exception.SignUPNotFoundException;
 import com.soft.model.User;
 import com.soft.service.Userservice;
 
@@ -26,10 +26,11 @@ public class UserController {
 	public HashMap<String,Object> signUp(@RequestBody User user){
 		HashMap<String,Object> resopnse=userservice.userSignUpService(user);
 		
-//		if(resopnse.containsValue(true)) {
 			return resopnse;			
+			
+//		if(resopnse.containsValue(true)) {
 //		}else {
-//			throw new UserNotSignUPFoundException("User Not SignUp Sucessfully..!");
+//			throw new SignUPNotFoundException("User Not SignUp Sucessfully..!")
 //		}
 		
 	}
@@ -41,7 +42,7 @@ public class UserController {
 //		if(response.containsValue(true)) {
 			return response;			
 //		}else {
-//			throw new UserNotSignInException("User Not SignIn Sucessfully..!");
+//			throw new SignInNotFoundException("User Not SignIn Sucessfully..!");
 //		}
 		
 	}

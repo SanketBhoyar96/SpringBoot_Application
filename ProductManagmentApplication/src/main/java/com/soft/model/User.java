@@ -1,11 +1,13 @@
 package com.soft.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "User_Details")
@@ -19,7 +21,9 @@ public class User {
 	private String address;
 	private long phoneNo;
 	private String email;
+//	@Transient
 	private String userName;
+//	@Column(nullable = false)
 	private String password;
 	public User() {
 		super();

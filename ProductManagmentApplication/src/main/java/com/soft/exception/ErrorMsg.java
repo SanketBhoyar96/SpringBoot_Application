@@ -5,10 +5,9 @@ import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
+
 public class ErrorMsg {
      
-	@Id
 	private int code;
 	private String description;
 	private Date date;
@@ -39,6 +38,10 @@ public class ErrorMsg {
 	}
 	public void setDate(Date date) {
 		this.date = date;
+	}
+	@Override
+	public String toString() {
+		return "ErrorMsg [code=" + code + ", description=" + description + ", date=" + date + "]";
 	}
 	
 	

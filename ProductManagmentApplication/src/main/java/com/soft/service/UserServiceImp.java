@@ -22,8 +22,8 @@ public class UserServiceImp implements Userservice{
 			User savedUser = userRepositary.save(user);
 			
 			if(savedUser != null) {
-				ServiceResponse.put("Massage", true);
 				ServiceResponse.put("Massage","User SignUp Sucessfully..!");
+				ServiceResponse.put("status", true);
 				ServiceResponse.put("SavedUserData", savedUser);
 			}else {
 				ServiceResponse.put("Massage","User Not SignUp Sucessfully..!");

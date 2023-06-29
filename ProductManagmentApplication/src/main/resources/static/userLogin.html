@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/userLogin.js"></script>
+<link rel="stylesheet" href="/css/userRegister.css">
+</head>
+<body>
+<div id="containerParent">
+		  <div id="userformId">
+		  <h1>Login User</h1>
+
+			<label>UserName<span>*</span></label><br> 
+			<input type="text" name="username" id="usernameId"><br><br>
+			
+			<label>UserPassword<span>*</span></label><br>
+			<input type="password" name="userpassword" id="userpassId"><br><br>
+			
+			<div id="savebutton">
+			<input  type="button" value="LOGIN USER" id="savebuttonId" onclick="userSignIn();">			
+			</div>
+              <a href="userRegister.html" style="text-align: center; margin-left: 60px" >Register First Login Again?</a>
+		</div>
+	</div>
+</body>
+</html>
